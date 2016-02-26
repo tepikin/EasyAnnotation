@@ -1,7 +1,7 @@
 # EasyAnnotation
 Annotations for Android. Based on AspectJ.
 
-This library help you with routine operations. Sach as Syncronous and Asynchronous call, check incomming variables and safe code execution.
+This library help you with routine operations. Such as Synchronous and Asynchronous call, check incoming variables and safe code execution.
 
 Support annotations:
 * **`@Async`** - call method at seporate thread
