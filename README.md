@@ -4,11 +4,11 @@ Annotations for Android. Based on AspectJ.
 This library help you with routine operations. Sach as Syncronous and Asynchronous call, check incomming variables and safe code execution.
 
 Support annotations:
-* `@Async` - call method at seporate thread
-* `@Sync` - call method at main thread ( support parameter `delay` - delay before call - default value 0 )
-* `@Safe` - surround method call by try/catch block.
-* `@NotNull` - check all parameters to not null value (if same value is `null` then method will not execut)
-* `@LogMethod` - log incomming parameters and method result with TAG *easyannotation*
+* **`@Async`** - call method at seporate thread
+* **`@Sync`** - call method at main thread ( support parameter `delay` - delay before call - default value 0 )
+* **`@Safe`** - surround method call by try/catch block.
+* **`@NotNull`** - check all parameters to not null value (if same value is `null` then method will not execut)
+* **`@LogMethod`** - log incomming parameters and method result with TAG *easyannotation*
 
 
 Fro example call method async with annotation **`@Async`** :
