@@ -10,5 +10,5 @@ import static java.lang.annotation.RetentionPolicy.CLASS;
  * Created by Egor on 25.02.2016.
  */
 @Target({METHOD}) @Retention(CLASS)
-public @interface Safe {
+public @interface NotNull {
 }
