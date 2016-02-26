@@ -100,7 +100,7 @@ public void myMethod( String param){
 </tr></tbody></table>
 
 
-## EasyAnnotation have not any perf impact
+#### EasyAnnotation have not any perf impact
 
 EasyAnnotation has a little compilation overhead, but the generated classes are good old classic Android code. **No reflection. No startup time, and no runtime impact**.
 
