@@ -116,7 +116,7 @@ public Object myMethod( String param){
     
     // same code here
     
-    Log.w(TAG, "--> ClassName.myMethod() Result: " + result);
+    Log.w(TAG, "<-- ClassName.myMethod() Result: " + result);
     return result;
 }
 </pre></td>
@@ -161,11 +161,11 @@ At section: dependencies-> add `compile 'com.github.tepikin:EasyAnnotation:0.11'
 At start of file add `apply plugin: "android-aspectj"` 
 
 ```gradle
+...
+apply plugin: "android-aspectj"  // <<<--- add this
 
-   apply plugin: "android-aspectj"  // <<<--- add this
-   
-	dependencies {
-	        ...
-	        compile 'com.github.tepikin:EasyAnnotation:0.11'     // <<<--- add this
-	}
+dependencies {
+        ...
+        compile 'com.github.tepikin:EasyAnnotation:0.11'     // <<<--- add this
+}
 ```
