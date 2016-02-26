@@ -131,11 +131,11 @@ EasyAnnotation has a little compilation overhead, but the generated classes are 
 ## Implementing lib
 **Step 1.** Add in your root build.gradle file (__*"project root dir"*/build.gradle__):
 
-Add in your root build.gradle at the end of repositories, at section: <br />
-allprojects->repositories-> add `maven { url "https://jitpack.io" }` 
-
-Add in your root build.gradle at the end of dependencies, at section: <br />
+Add in your root build.gradle at the end of *dependencies*, at section: <br />
 buildscript->dependencies-> add `classpath 'com.uphyca.gradle:gradle-android-aspectj-plugin:0.9.+'` 
+
+Add in your root build.gradle at the end of *repositories*, at section: <br />
+allprojects->repositories-> add `maven { url "https://jitpack.io" }` 
 
 ```gradle
 buildscript {
