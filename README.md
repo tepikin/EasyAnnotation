@@ -100,7 +100,7 @@ public void myMethod( String param){
 </tr></tbody></table>
 
 ## Implementing lib
-**Step 1.** Add in your root build.gradle file (*"project root dir"*/build.gradle):
+**Step 1.** Add in your root build.gradle file (__*"project root dir"*/build.gradle__):
 
 Add `maven { url "https://jitpack.io" }` in your root build.gradle at the end of repositories.
 At section: allprojects->repositories-> add `maven { url "https://jitpack.io" }` 
@@ -126,7 +126,7 @@ allprojects {
 }
 ```
 
-**Step 2.** Add in your app build.gradle file (*"app dir"*/build.gradle):
+**Step 2.** Add in your app build.gradle file (__*"app dir"*/build.gradle__):
 
 Add `compile 'com.github.tepikin:EasyAnnotation:0.11'` in your app build.gradle at the end of dependencies.
 At section: dependencies-> add `compile 'com.github.tepikin:EasyAnnotation:0.11'`
