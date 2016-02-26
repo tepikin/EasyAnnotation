@@ -126,9 +126,6 @@ allprojects {
 }
 ```
 
-```gradle
-```
-
 **Step 2.** Add in your app build.gradle file (*"app dir"*/build.gradle):
 
 Add `compile 'com.github.tepikin:EasyAnnotation:0.11'` in your app build.gradle at the end of dependencies.
