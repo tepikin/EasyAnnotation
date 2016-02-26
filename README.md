@@ -17,7 +17,6 @@ Fro example call method async with annotation **`@Async`** :
 
 <td><pre>
 <b><i>@Async</i></b>
-
 void myMethod(String param){
    
     // same async code here
@@ -48,7 +47,6 @@ void myMethod(final String param){
 
 <td><pre>
 <b><i>@NotNull</i></b>
-
 void myMethod(String param1, String param2){
    
     // same code here
@@ -63,7 +61,7 @@ void myMethod(String param1, String param2){
     return;
     }
     
-    // same async code here
+    // same code here
 
 }
 </pre></td>
@@ -77,7 +75,6 @@ void myMethod(String param1, String param2){
 
 <td><pre>
 <b><i>@Safe</i></b>
-
 public void myMethod(String param){
    
     // same code here
@@ -89,7 +86,7 @@ public void myMethod(String param){
 public void myMethod( String param){
     try{
     
-            // same async code here
+            // same code here
             
     }catch(Throwable e){
       e.printStackTrace();
@@ -99,6 +96,32 @@ public void myMethod( String param){
     
 </tr></tbody></table>
 
+
+**`@LogMethod`** :
+
+<table><tbody><tr><th align="center">EasyAnnotation</th><th align="center">Standart</th></tr><tr>
+
+<td><pre>
+<b><i>@LogMethod</i></b>
+public Object myMethod(String param){
+   
+    // same code here
+   
+}
+</pre></td>
+
+<td><pre>
+public Object myMethod( String param){
+    Log.w(TAG, "--> ClassName.myMethod() Args: " + param);
+    
+    // same code here
+    
+    Log.w(TAG, "--> ClassName.myMethod() Result: " + result);
+    return result;
+}
+</pre></td>
+
+</tr></tbody></table>
 
 #### EasyAnnotation have not any perf impact
 
@@ -115,14 +138,12 @@ Add `classpath 'com.uphyca.gradle:gradle-android-aspectj-plugin:0.9.+'` in your 
 At section: buildscript->dependencies-> add `classpath 'com.uphyca.gradle:gradle-android-aspectj-plugin:0.9.+'` 
 
 ```gradle
-
 buildscript {
     dependencies {
         ... 
        classpath 'com.uphyca.gradle:gradle-android-aspectj-plugin:0.9.+'**    // <<<--- add this
     }
 }
-
 
 allprojects {
 	repositories {
