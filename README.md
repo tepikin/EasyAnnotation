@@ -141,7 +141,7 @@ allprojects->repositories-> add `maven { url "https://jitpack.io" }`
 buildscript {
     dependencies {
         ... 
-       classpath 'com.uphyca.gradle:gradle-android-aspectj-plugin:0.9.+'**    // <<<--- add this
+       classpath 'com.uphyca.gradle:gradle-android-aspectj-plugin:0.9.+'    // <<<--- add this
     }
 }
 
