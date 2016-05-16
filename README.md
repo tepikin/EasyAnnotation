@@ -1,4 +1,4 @@
-# EasyAnnotation
+# EasyAnnotation <a href="https://flattr.com/submit/auto?fid=9zwvgy&url=https%3A%2F%2Fgithub.com%2Ftepikin%2FEasyAnnotation" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a>
 Annotations for Android. Based on AspectJ.
 
 This library help you with routine operations. Such as Synchronous and Asynchronous call, check incoming variables and safe code execution.
